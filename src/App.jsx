@@ -1,21 +1,21 @@
 import React from 'react';
-import ParticlesBackground from './components/Particles';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Particle from './components/Particle';
+
 import './App.css';
+
 
 function App() {
   return (
-    <>
-      <div className=''>
-        <ParticlesBackground />
-          <Navbar />
-          <main>
+    <div className='app-container'>
+        <Particle />
+        <Navbar />
+        <main className='content'>
 
-          </main>
-          <Footer />
-        </div>
-    </>
+        </main>
+        <Footer />
+    </div>
   );
 }
 
