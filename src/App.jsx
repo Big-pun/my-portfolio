@@ -7,13 +7,13 @@ import './App.css';
 
 function App() {
   return (
-    <div className='app-container'>
-      
-        <Navbar />
-        <main className='content'>
+    <div className='bg-slate-800'>
 
-        </main>
-        <Footer />
+      <Navbar />
+      <main >
+
+      </main>
+      <Footer />
     </div>
   );
 }
