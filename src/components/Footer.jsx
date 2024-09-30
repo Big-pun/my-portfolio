@@ -5,8 +5,7 @@ import { FaLinkedin } from "react-icons/fa";
 function Footer() {
     return (
         <>
-            <div>
-                <footer className='bg-slate-900'>
+                <footer>
                     <div className='container mx-auto flex flex-col space-y-2 p-2 md:flex-row justify-around items-center text-gray-300'>
                         <div>Designed and Developed by Adrien Thomas</div>
                         <div>Copyright © 2024 AT</div>
@@ -16,7 +15,6 @@ function Footer() {
                         </div>
                     </div>
                 </footer>
-            </div>
         </>
     )
 }

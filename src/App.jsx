@@ -9,7 +9,7 @@ import './App.css';
 
 function App() {
   return (
-    <div className='bg-slate-800 text-white'>
+    <div className='bg-slate-900 text-white'>
 
       <Navbar />
       <main className='content'>
