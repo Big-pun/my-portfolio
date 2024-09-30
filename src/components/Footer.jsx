@@ -11,7 +11,7 @@ function Footer() {
                         <div>Copyright © 2024 AT</div>
                         <div className='flex flex-row space-x-4 text-3xl'>
                             <a href='https://github.com/Big-pun' target='_blank' rel='noreferrer'><FaSquareGithub /></a>
-                            <a href='www.linkedin.com/in/adrien-thomas-a06b61307' target='_blank' rel='noreferrer'><FaLinkedin /></a>
+                            <a href='https://linkedin.com/in/adrien-thomas-a06b61307' target='_blank' rel='noreferrer'><FaLinkedin /></a>
                         </div>
                     </div>
                 </footer>
