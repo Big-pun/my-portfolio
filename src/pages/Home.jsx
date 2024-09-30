@@ -1,25 +1,24 @@
 import React from 'react'
 import Intro from '../components/Home/Intro'
 import Desk from '../Images/Desk.svg'
+import Dev from '../Images/Dev.svg'
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
 
 function Home() {
     return (
         <>
-            <button className='bg-green-500 text-white py-2 px-4 fixed bottom-5 right-5 rounded' onClick={() => document.getElementById('navbar').scrollIntoView({ behavior: 'smooth' })}>
-                Back to Top
-            </button>
-            
+
             <section id='section1' className='container mx-auto p-4 grid grid-cols-12 min-h-screen'>
                 <div className='col-span-12 md:col-span-5 md:col-start-3 pt-20'>
+                    <h1 className='text-3xl md:text-6xl mb-12'>Hello,<br /> I'm <span className='font-bold text-green-500'>Adrien Thomas</span></h1>
                     <Intro />
                 </div>
 
                 <div className='col-span-8 col-start-3 md:col-span-3 md:col-start-8'>
-                    <img src={Desk} alt="Desk" />
+                    <img src={Dev} alt="Dev" />
                 </div>
-                <div className='col-span-12 text-center mt-8'>
+                <div className='col-span-12 text-center'>
                     <button className='text-green-500 text-5xl animate-pulse items-center' onClick={() => document.getElementById('section2').scrollIntoView({ behavior: 'smooth' })}>
                         <MdOutlineKeyboardDoubleArrowDown />
                     </button>
@@ -27,11 +26,14 @@ function Home() {
             </section>
 
             <section id='section2' className='container mx-auto p-4 grid grid-cols-12'>
-
                 <div className='col-span-12 md:col-span-6 md:col-start-4 mt-12'>
-                    <h2 className='text-3xl'>Quick <span className='text-green-500 font-bold'>Introduction</span></h2>
+                    <h2 className='text-4xl'>Quick <span className='text-green-500 font-bold'>Introduction</span></h2>
                     <p className='text-lg'>I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I'll soon be looking for a intership opportunity ... but that's not our subject here</p>
                 </div>
+
+                <h3>
+
+                </h3>
 
             </section>
         </>

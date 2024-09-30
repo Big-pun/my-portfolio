@@ -15,8 +15,7 @@ const Intro = () => {
 
   return (
     <div>
-        <h1 className='text-6xl mb-12'>Hello,<br/> I'm <span className='font-bold text-green-500'>Adrien Thomas</span></h1>
-        <div id="typewriter" className=' text-3xl mb-8'></div>
+        <div id="typewriter" className='text-xl md:text-3xl mb-8'></div>
     </div>
   );
 };

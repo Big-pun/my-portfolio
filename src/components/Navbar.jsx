@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav id="navbar" className="bg-transparent backdrop-blur-md mb-24" aria-label="Main Navigation">
+    <nav id="navbar" className="bg-transparent backdrop-blur-md md:mb-24" aria-label="Main Navigation">
       <div className="container mx-auto flex justify-around items-center py-4">
         <NavLink to="/" className={getNavLinkClass} aria-label="Home" aria-current={({ isActive }) => isActive ? 'page' : undefined}><FaHome/>Home</NavLink>
         <NavLink to="/about" className={getNavLinkClass} aria-label="Home" aria-current={({ isActive }) => isActive ? 'page' : undefined}><BsPersonArmsUp />About</NavLink>
