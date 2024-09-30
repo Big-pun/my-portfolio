@@ -1,29 +1,20 @@
-import React, { useState, useEffect } from 'react';
-
-const TypingText = ({ text, speed }) => {
-  const [displayText, setDisplayText] = useState('');
-
-  useEffect(() => {
-    let index = 0;
-    const interval = setInterval(() => {
-      if (index < text.length) {
-        setDisplayText((prev) => prev + text[index]);
-        index++;
-      } else {
-        clearInterval(interval);
-      }
-    }, speed);
-
-    return () => clearInterval(interval); // Cleanup
-  }, [text, speed]);
-
-  return <span>{displayText}</span>;
-};
+import React, { useEffect } from 'react';
+import Typewriter from 'typewriter-effect/dist/core';
 
 const Intro = () => {
+  useEffect(() => {
+    new Typewriter('#typewriter', {
+      strings: [ "Welcome on my portfolio <br/> I'm a student front-end developer"],
+      autoStart: true,
+      loop: true,
+      speed: 50,
+    });
+  }, []);
+
   return (
     <div>
-      <TypingText text="Hello, I am Adrien Thomas" speed={100} />
+        <h1 className='text-2xl text-white'>Hello, I'm <span className='font-bold text-green-500'>Adrien Thomas</span></h1>
+        <div id="typewriter" className='text-white text-lg'></div>
     </div>
   );
 };

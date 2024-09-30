@@ -7,7 +7,7 @@ import { BiSolidContact } from "react-icons/bi";
 const Navbar = () => {
 
   const getNavLinkClass = ({ isActive }) => {
-    return isActive ? "text-xl font-bold text-green-600 px-3 py-2 underline flex items-center" : "text-xl font-bold text-green-600 px-3 py-2 flex items-center";
+    return isActive ? "text-xl font-bold text-green-500 px-3 py-2 underline flex items-center" : "text-xl font-bold text-green-500 px-3 py-2 flex items-center";
   };
 
   return (
