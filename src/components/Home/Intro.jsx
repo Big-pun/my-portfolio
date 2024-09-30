@@ -8,7 +8,8 @@ const Intro = () => {
       strings: [ "Welcome on my portfolio <br/> I'm a student front-end developer"],
       autoStart: true,
       loop: true,
-      speed: 80,
+      delay: 100,
+      deleteSpeed: 50,
       
     });
   }, []);
