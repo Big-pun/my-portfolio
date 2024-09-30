@@ -1,8 +1,13 @@
 import React from 'react'
+import Intro from '../components/Home/Intro'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+        <div className='container mx-auto'>
+            <Intro />
+        </div>
+    </div>
   )
 }
 
