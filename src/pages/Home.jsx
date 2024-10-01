@@ -31,7 +31,7 @@ function Home() {
                     </div>
 
                     <div className='col-span-12 md:col-span-6 md:col-start-4 mt-12'>
-                        <h2 className='text-4xl'>What i'm<span className='text-green-500 font-bold'> Learning</span></h2>
+                        <h2 className='text-4xl'>What i'm currently<span className='text-green-500 font-bold'> Focusing</span> on</h2>
                         <ul className='list-disc list-inside grid grid-cols-3'>
                             <li>HTML5</li>
                             <li>CSS3</li>

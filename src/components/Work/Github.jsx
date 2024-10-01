@@ -5,7 +5,9 @@ function Github() {
     return (
         <>
             <div>
-                <GitHubCalendar username="Big-pun" />
+                <GitHubCalendar 
+                username="Big-pun"
+                colorScheme='dark'/>
             </div>
         </>
     )
