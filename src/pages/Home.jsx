@@ -9,12 +9,12 @@ function Home() {
         <>
             <div className='container mx-auto p-4'>
                 <section id='section1' className='grid grid-cols-12 min-h-screen'>
-                    <div className='col-span-12 md:col-span-5 md:col-start-3 pt-20'>
+                    <div className='col-span-12 md:col-span-5 md:col-start-2 pt-20'>
                         <h1 className='text-3xl md:text-6xl mb-12'>Hello,<br /> I'm <span className='font-bold text-green-500'>Adrien Thomas</span></h1>
                         <Intro />
                     </div>
 
-                    <div className='col-span-8 col-start-3 md:col-span-3 md:col-start-8'>
+                    <div className='col-span-8 col-start-3 md:col-span-3 md:col-start-8 md:mt-24'>
                         <img src={Dev} alt="Dev" />
                     </div>
                     <div className='col-span-12 text-center'>
@@ -39,8 +39,6 @@ function Home() {
                             <li>React</li>
                             <li>Git</li>
                             <li>GitHub</li>
-                            <li>PHP</li>
-                            <li>MySQL</li>
                         </ul>
                         <span className='text-sm text-center'>And many more...</span>
                     </div>
