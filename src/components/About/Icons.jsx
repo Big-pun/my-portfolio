@@ -7,7 +7,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 function Icons() {
     return (
-        <div className='flex flex-row justify-between'>
+        <div className='flex flex-row'>
             <IconContext.Provider value={{ color: 'orange', size: 50 }}>
                 <div className="border-2 border-gray-300 p-2 rounded-lg">
                     <FaHtml5 />

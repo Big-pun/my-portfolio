@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react'
-import Github from '../components/Work/Github'
+
+const Github = lazy(() => import('../components/Work/Github'))
 
 function Work() {
   return (
