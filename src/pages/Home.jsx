@@ -2,7 +2,6 @@ import React from 'react'
 import Intro from '../components/Home/Intro'
 import Dev from '../Images/Dev.svg'
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
-import Icons from '../components/Home/Icons';
 import H1 from '../components/Home/H1';
 
 
@@ -10,9 +9,9 @@ import H1 from '../components/Home/H1';
 function Home() {
     return (
         <>
-            <div className='container mx-auto p-4'>
-                <section id='section1' className='grid grid-cols-12'>
-                    <div className='col-span-12 md:col-span-5 md:col-start-2 pt-20'>
+            <div className='container mx-auto p-4 min-h-screen'>
+                <section id='section1' className='grid grid-cols-12 '>
+                    <div className='col-span-12 md:col-span-5 md:col-start-2 mt-20 '>
                         <H1 />
                         <Intro />
                     </div>
@@ -27,17 +26,11 @@ function Home() {
                     </div>
                 </section >
 
-                <section id='section2' className='grid grid-cols-12 min-h-screen'>
+                <section id='section2' className='grid grid-cols-12 '>
                     <div className='col-span-12 md:col-span-8 md:col-start-3 mt-12'>
                         <h2 className='text-5xl'>Quick <span className='text-green-500 font-bold'>Introduction</span></h2>
                         <p className='text-xl md:text-2xl'>I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I'll soon be looking for a intership opportunity ... but that's not our subject here</p>
                     </div>
-
-                    <div className='col-span-12 md:col-span-6 md:col-start-4 mt-12'>
-                        <h2 className='text-4xl mb-12'>What i'm<span className='text-green-500 font-bold'> Focusing</span> on</h2>
-                        <Icons />
-                    </div>
-
                 </section>
             </div >
         </>
