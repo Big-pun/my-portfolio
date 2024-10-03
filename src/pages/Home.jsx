@@ -27,12 +27,10 @@ function Home() {
                     </div>
                 </section >
 
-                <section id='section2' className='grid grid-cols-12'>
+                <section id='section2' className='grid grid-cols-12 min-h-screen'>
                     <div className='col-span-12 md:col-span-8 md:col-start-3 mt-12'>
-
                         <h2 className='text-5xl'>Quick <span className='text-green-500 font-bold'>Introduction</span></h2>
                         <p className='text-xl md:text-2xl'>I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I'll soon be looking for a intership opportunity ... but that's not our subject here</p>
-
                     </div>
 
                     <div className='col-span-12 md:col-span-6 md:col-start-4 mt-12'>
@@ -45,5 +43,4 @@ function Home() {
         </>
     )
 }
-
 export default Home
