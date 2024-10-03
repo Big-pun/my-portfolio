@@ -40,7 +40,7 @@ function Home() {
                 </div>
             </section>
 
-            <section ref={section2Ref} className='grid grid-cols-12'>
+            <section ref={section2Ref} className='grid grid-cols-12 min-h-screen pt-24'>
                 <div className='col-span-12 md:col-span-6 md:col-start-4'>
                     <h2 className='text-5xl mb-4'>
                         How This <span className='text-green-500 font-bold'>Portfolio</span> Was Built
