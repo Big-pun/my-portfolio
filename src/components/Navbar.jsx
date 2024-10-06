@@ -16,6 +16,10 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <nav id="navbar" className="bg-transparent backdrop-blur-md md:mb-24" aria-label="Main Navigation">
@@ -52,27 +56,25 @@ const Navbar = () => {
             </AnimatePresence>
           </button>
         </div>
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              className="md:hidden flex flex-col items-center mt-4"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              <NavLink to="/" className={getNavLinkClass} onClick={closeMenu} aria-label="Home" aria-current={({ isActive }) => isActive ? 'page' : undefined}><FaHome /> Home</NavLink>
+              <NavLink to="/about" className={getNavLinkClass} onClick={closeMenu} aria-label="About" aria-current={({ isActive }) => isActive ? 'page' : undefined}><BsPersonArmsUp /> About</NavLink>
+              <NavLink to="/work" className={getNavLinkClass} onClick={closeMenu} aria-label="Work" aria-current={({ isActive }) => isActive ? 'page' : undefined}><FaSuitcase /> Work</NavLink>
+              <NavLink to="/contact" className={getNavLinkClass} onClick={closeMenu} aria-label="Contact" aria-current={({ isActive }) => isActive ? 'page' : undefined}><BiSolidContact /> Contact</NavLink>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.5 }}
-            className="md:hidden bg-transparent backdrop-blur-md overflow-hidden"
-          >
-            <div className="container mx-auto flex flex-col items-center p-4">
-              <NavLink to="/" className={getNavLinkClass} aria-label="Home"><FaHome /> Home</NavLink>
-              <NavLink to="/about" className={getNavLinkClass} aria-label="About" aria-current={({ isActive }) => isActive ? 'page' : undefined}><BsPersonArmsUp /> About</NavLink>
-              <NavLink to="/work" className={getNavLinkClass} aria-label="Work" aria-current={({ isActive }) => isActive ? 'page' : undefined}><FaSuitcase /> Work</NavLink>
-              <NavLink to="/contact" className={getNavLinkClass} aria-label="Contact" aria-current={({ isActive }) => isActive ? 'page' : undefined}><BiSolidContact /> Contact</NavLink>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </>
   );
-}
+};
 
 export default Navbar;
