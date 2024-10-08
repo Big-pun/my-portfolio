@@ -4,39 +4,64 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IconContext } from 'react-icons';
 import { SiNextdotjs } from "react-icons/si";
+import { motion } from 'framer-motion';
 
 function Icons() {
     return (
-        <div className='flex flex-row flex-wrap justify-evenly gap-4 md:justify-around '>
+        <div className='flex flex-row flex-wrap justify-evenly gap-4 md:justify-around'>
             <IconContext.Provider value={{ color: 'orange', size: 50 }}>
-                <div className="border-2 border-gray-300 p-2 rounded-lg">
+                <motion.div
+                    className="border-2 border-gray-300 p-2 rounded-lg"
+                    whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                >
                     <FaHtml5 />
-                </div>
+                </motion.div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: 'blue', size: 50 }}>
-                <div className="border-2 border-gray-300 p-2 rounded-lg">
+                <motion.div
+                    className="border-2 border-gray-300 p-2 rounded-lg"
+                    whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                >
                     <FaCss3Alt />
-                </div>
+                </motion.div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: '#0481a2', size: 50 }}>
-                <div className="border-2 border-gray-300 p-2 rounded-lg">
+                <motion.div
+                    className="border-2 border-gray-300 p-2 rounded-lg"
+                    whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                >
                     <FaReact />
-                </div>
+                </motion.div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: 'yellow', size: 50 }}>
-                <div className="border-2 border-gray-300 p-2 rounded-lg">
+                <motion.div
+                    className="border-2 border-gray-300 p-2 rounded-lg"
+                    whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                >
                     <IoLogoJavascript />
-                </div>
+                </motion.div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: '#42bdf0', size: 50 }}>
-                <div className="border-2 border-gray-300 p-2 rounded-lg">
+                <motion.div
+                    className="border-2 border-gray-300 p-2 rounded-lg"
+                    whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                >
                     <RiTailwindCssFill />
-                </div>
+                </motion.div>
             </IconContext.Provider>
             <IconContext.Provider value={{ color: 'white', size: 50 }}>
-                <div className="border-2 border-gray-300 p-2 rounded-lg">
+                <motion.div
+                    className="border-2 border-gray-300 p-2 rounded-lg"
+                    whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
+                    transition={{ type: 'spring', stiffness: 300 }}
+                >
                     <SiNextdotjs />
-                </div>
+                </motion.div>
             </IconContext.Provider>
         </div>
     );
