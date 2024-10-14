@@ -6,16 +6,16 @@ function H1About() {
         <>
             <motion.h1
                 className='text-5xl md:text-6xl mb-12 md:mb-8'
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
             >
                 Let me <br/> <span className='font-bold text-green-500'>Introduce</span> myself
             </motion.h1>
             <motion.p
                 className='text-2xl md:text-3xl max-w-prose'
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2, delay: 2 }}
             >
                 Following over a decade of culinary experience, I've chosen to pivot into a new career. During the 2020 pandemic, I took my first steps into coding with <a href='https://www.freecodecamp.org/' className='underline hover:text-green-500'>freeCodeCamp</a>, exploring foundational integrations.<br />
