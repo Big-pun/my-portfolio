@@ -44,7 +44,7 @@ function Projects() {
 
     return (
         <div className="">
-            <h2 className='text-4xl mb-4'>Websites</h2>
+            <h2 className='text-4xl text-green-500 font-bold mb-4'>Websites</h2>
             <Slider {...settings}>
                 {projects.map((project, index) => (
                     <Background>
@@ -53,8 +53,8 @@ function Projects() {
                                 <img src={project.imageUrl} alt={project.title} className='h-40' />
                             </div>
                             <div className='flex-col space-y-6'>
-                                <h2>{project.title}</h2>
-                                <p className='max-w-prose'>{project.description}</p>
+                                <h2 className='text-2xl font-bold'>{project.title}</h2>
+                                <p className='max-w-prose text-lg'>{project.description}</p>
 
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">Voir le projet</a>
                             </div>

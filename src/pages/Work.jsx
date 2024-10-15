@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react'
 import H1Work from '../components/Work/H1Work'
 import Projects from '../components/Work/Projects'
+import WebApps from '../components/Work/WebApps'
 
 const Github = lazy(() => import('../components/Work/Github'))
 
@@ -15,6 +16,10 @@ function Work() {
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
             <Projects />
+          </div>
+
+          <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
+          <WebApps />
           </div>
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4 mx-auto'>

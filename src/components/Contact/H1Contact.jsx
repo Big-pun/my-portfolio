@@ -16,7 +16,7 @@ function H1Contact() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2, delay: 2 }}
             >
-                If you want to contact me, you can send me a email <a href='mailto:adrienthomas419@gmail.com' className='text-green-500 font-bold underline'>here
+                If you want to contact me, you can send me a email <a href='mailto:adrienthomas419@gmail.com' className='hover:text-green-500 font-bold underline'>here
                 </a><br/>
                 You can also use the <span className='text-green-500 font-bold'>form</span> below or contact me on my <span className='text-green-500 font-bold'> socials </span>
             </motion.p>
