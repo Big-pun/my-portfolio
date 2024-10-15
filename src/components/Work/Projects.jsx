@@ -35,7 +35,10 @@ function Projects() {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        pauseOnHover: true
     };
 
 
@@ -47,7 +50,7 @@ function Projects() {
                     <Background>
                         <div key={index} className="flex flex-row items-center gap-4 p-12">
                             <div>
-                                <img src={project.imageUrl} alt={project.title} className='max-w-60' />
+                                <img src={project.imageUrl} alt={project.title} className='h-40' />
                             </div>
                             <div className='flex-col space-y-6'>
                                 <h2>{project.title}</h2>
