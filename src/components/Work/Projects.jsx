@@ -56,7 +56,7 @@ function Projects() {
                                 <h2 className='text-2xl font-bold'>{project.title}</h2>
                                 <p className='max-w-prose text-lg'>{project.description}</p>
 
-                                <a href={project.link} target="_blank" rel="noopener noreferrer">Voir le projet</a>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>
                             </div>
                         </div>
                     </Background>

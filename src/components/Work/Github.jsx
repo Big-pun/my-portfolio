@@ -6,7 +6,8 @@ function Github() {
         <>
                 <GitHubCalendar 
                 username="Big-pun"
-                colorScheme='dark'/>
+                colorScheme='dark'
+                />
         </>
     )
 }

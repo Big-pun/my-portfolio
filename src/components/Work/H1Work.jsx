@@ -19,7 +19,7 @@ function H1Work() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, delay: 2 }}
       >
-        Here are some of the projects I've worked on. Feel free to check the code on my <a href='https://github.com/Big-pun' className='underline hover:text-green-500'>GitHub</a>.
+        Here are some of the projects I've worked on. Feel free to check the code on my <a href='https://github.com/Big-pun' target='_blank' className='underline hover:text-green-500'>GitHub</a>.
       </motion.p>
     </>
   );
