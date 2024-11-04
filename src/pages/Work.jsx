@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import { Suspense, lazy } from 'react'
 import H1Work from '../components/Work/H1Work'
 import Projects from '../components/Work/Projects'
 import WebApps from '../components/Work/WebApps'
@@ -19,14 +19,18 @@ function Work() {
           </div>
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
-          <WebApps />
+            <WebApps />
           </div>
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
+
             <h2 className='text-4xl mb-4'>Days of <span className='text-green-500 font-bold'>Code</span></h2>
-            <Suspense fallback={<div>Loading...</div>}>
-              <Github />
-            </Suspense>
+
+              <Suspense fallback={<div>Loading...</div>}>
+                <Github />
+              </Suspense>
+            
+
           </div>
         </div>
       </section>

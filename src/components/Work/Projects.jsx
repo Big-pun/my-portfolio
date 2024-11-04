@@ -1,4 +1,3 @@
-import React from 'react';
 import DBZKakarot from '../../Images/DBZKakarot.png';
 import TRS from '../../Images/TheRollingStoners.png';
 import Slider from 'react-slick';
@@ -47,8 +46,8 @@ function Projects() {
             <h2 className='text-4xl text-green-500 font-bold mb-4'>Websites</h2>
             <Slider {...settings}>
                 {projects.map((project, index) => (
-                    <Background>
-                        <div key={index} className="flex flex-row items-center gap-4 p-12">
+                    <Background key={index}>
+                        <div className="flex flex-row items-center gap-4 p-12 min-h-96">
                             <div>
                                 <img src={project.imageUrl} alt={project.title} className='h-40' />
                             </div>

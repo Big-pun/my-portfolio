@@ -1,4 +1,3 @@
-import React from 'react'
 import GitHubCalendar from 'react-github-calendar'
 
 function Github() {
@@ -7,6 +6,7 @@ function Github() {
                 <GitHubCalendar 
                 username="Big-pun"
                 colorScheme='dark'
+                
                 />
         </>
     )

@@ -1,4 +1,3 @@
-import React, { useRef } from 'react';
 import Intro from '../components/Home/Intro';
 import Dev from '../Images/Dev.svg';
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
@@ -53,9 +52,6 @@ function Home() {
                         <li><span className='font-bold text-green-500'>Tailwind CSS:</span> Tailwind CSS is used for styling, providing a utility-first approach that allows for rapid and responsive development.</li>
                         <li><span className='font-bold text-green-500'>Vite:</span> Vite is used as the build tool, offering fast development and optimized production builds.</li>
                     </ul>
-                    <p className='text-xl md:text-2xl mb-8'>
-                        The combination of these technologies allows for a seamless and efficient development process, resulting in a portfolio that is both visually appealing and highly functional.
-                    </p>
 
                     <p className='text-lg md:text-xl'>
                         Feel free to explore the code and reach out if you have any questions or suggestions!
