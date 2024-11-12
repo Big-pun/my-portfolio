@@ -1,5 +1,6 @@
 import H1Contact from '../components/Contact/H1Contact'
 import Form from '../components/Contact/Form'
+import Socials from '../components/Contact/Socials'
 
 
 function Contact() {
@@ -11,9 +12,12 @@ function Contact() {
         </div>
 
         <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
-          <Form />
+          <Socials />
         </div>
 
+        <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
+          <Form />
+        </div>
 
       </section>
     </div>
