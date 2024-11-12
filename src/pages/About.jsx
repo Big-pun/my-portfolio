@@ -41,14 +41,14 @@ function About() {
             What I&apos;m <span className='text-green-500 font-bold'>Focusing</span> on
           </h2>
           <p className='text-xl md:text-2xl mb-12 md:mb-8'>
-            Currently, my primary focus is on <span className='text-green-500 font-bold'>front-end development</span>, specializing in React and Vite. I thrive to create dynamic, responsive, and user-centric interfaces that provide seamless experiences across devices. My approach emphasizes building
+            Currently, my primary focus is on <span className='text-green-500 font-bold'>front-end development</span>, specializing in <span className='text-green-500 font-bold'>React and Vite</span>. I thrive to create dynamic, responsive, and user-centric interfaces that provide seamless experiences across devices. My approach emphasizes building
             <span className='text-green-500 font-bold'> clean</span>, modular
             <span className='text-green-500 font-bold'> code</span> that ensures both high
             <span className='text-green-500 font-bold'> readability</span> and
             <span className='text-green-500 font-bold'> maintainability</span>.</p>
           <br />
           <p className='text-xl md:text-2xl mb-4'>
-            Additionally, I&apos;m expanding my expertise into full-stack development, with a focus on Node.js and Next.js, as well as database management with MySQL and PHP.
+            Additionally, I&apos;m expanding my expertise into full-stack development, with Node.js and Next.js.
           </p>
           <Suspense fallback={<div>Loading...</div>}>
             <Icons />

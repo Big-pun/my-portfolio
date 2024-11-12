@@ -5,7 +5,7 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 // Enregistre les composants nécessaires de Chart.js
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-function Repos() {
+function Languages() {
   const [languages, setLanguages] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -80,16 +80,15 @@ function Repos() {
         },
       },
     },
+    rotation: -90,
+    circumference: 180,
   };
 
   return (
-    <div>
-      <h2>Languages I write code</h2>
-      <div className="max-w-screen-sm">
+      <div>
         <Pie data={data} options={options} />
       </div>
-    </div>
   );
 }
 
-export default Repos;
+export default Languages;
