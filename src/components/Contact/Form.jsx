@@ -1,5 +1,4 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
 
 function Form() {
@@ -39,10 +38,10 @@ function Form() {
 
 
     return (
-                <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-sm' noValidate>
+                <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-sm  rounded-lg shadow-lg' noValidate>
                     <div className='grid grid-cols-2 gap-4'>
                         <div className='mb-4 mx-auto'>
-                            <label htmlFor='name' className='block text-lg font-bold'>Name</label>
+                            <label htmlFor='name' className='block text-lg font-bold text-green-500'>Name</label>
                             <input type='text' id='name' name='name' placeholder='Enter your name'
                                 {...register('name', {
                                     required: 'Please enter a name',
@@ -54,7 +53,7 @@ function Form() {
                         </div>
 
                         <div className='mb-4 mx-auto'>
-                            <label htmlFor='email' className='block text-lg font-bold '>Email</label>
+                            <label htmlFor='email' className='block text-lg font-bold text-green-500'>Email</label>
                             <input type='email' id='email' name='email' placeholder='Enter your email'
                                 {...register('email', {
                                     required: 'Please enter an email',
@@ -66,7 +65,7 @@ function Form() {
                     </div>
 
                     <div className='mb-4'>
-                        <label htmlFor='message' className='block text-lg font-bold '>Message</label>
+                        <label htmlFor='message' className='block text-lg font-bold text-green-500'>Message</label>
                         <textarea id='message' name='message' rows={4} placeholder='Enter your message'
                             {...register('message', {
                                 required: 'Please enter a message',

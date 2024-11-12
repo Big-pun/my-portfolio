@@ -1,4 +1,3 @@
-import React from 'react'
 import H1Contact from '../components/Contact/H1Contact'
 import Form from '../components/Contact/Form'
 

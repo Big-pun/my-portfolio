@@ -1,5 +1,6 @@
 import DBZKakarot from '../../Images/DBZKakarot.png';
 import TRS from '../../Images/TheRollingStoners.png';
+import Campings from '../../Images/campings.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -22,10 +23,10 @@ function Projects() {
             link: 'https://big-pun.github.io/TP1_ThomasAdrien/'
         },
         {
-            title: 'Projet 3',
-            description: 'Description de projet 3.',
-            imageUrl: '/images/projet3.png',
-            link: ''
+            title: 'Campings',
+            description: 'This project is built with PHP and MySQL, and it allows users to search for campsites by region. The site features a list of campsites, a listing by stars and a other listing by possible experiences. Users can also search for campsites by region. The site also includes a section with recipes for camping meals. User can update recipes and add new ones.',
+            imageUrl: Campings,
+            link: 'http://adrienthomas.free.nf/?i=1'
         }
     ];
 
