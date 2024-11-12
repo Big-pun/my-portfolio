@@ -51,6 +51,9 @@ function Home() {
                         <li><span className='font-bold text-green-500'>React:</span> The entire application is built using React.</li>
                         <li><span className='font-bold text-green-500'>Tailwind CSS:</span> Tailwind CSS is used for styling, providing a utility-first approach that allows for rapid and responsive development.</li>
                         <li><span className='font-bold text-green-500'>Vite:</span> Vite is used as the build tool, offering fast development and optimized production builds.</li>
+                        <li><span className='font-bold text-green-500'>React Icons:</span> Icons are provided by the React Icons library.</li>
+                        <li><span className='font-bold text-green-500'>React Router:</span> React Router is used for navigation.</li>
+                        <li><span className='font-bold text-green-500'>React Helmet:</span> React Helmet is used for managing the document head.</li>
                     </ul>
 
                     <p className='text-lg md:text-xl'>

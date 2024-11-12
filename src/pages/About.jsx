@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import Avatar from '../Images/Avatar.png';
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 
@@ -23,7 +23,7 @@ function About() {
           <img src={Avatar} alt="Avatar" className='rounded-2xl' />
         </div>
 
-        <div className='col-span-12 text-center hidden lg:block -mt-36'>
+        <div className='col-span-12 text-center hidden lg:block -mt-40'>
           <button
             className='text-green-500 text-5xl md:text-9xl animate-pulse items-center'
             aria-label="Scroll to section 2"
@@ -38,7 +38,7 @@ function About() {
       <section id='section2' className='grid grid-cols-12 md:min-h-screen pt-8 lg:-my-16'>
         <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3'>
           <h2 className='text-5xl mb-12 md:mb-8'>
-            What I'm <span className='text-green-500 font-bold'>Focusing</span> on
+            What I&apos;m <span className='text-green-500 font-bold'>Focusing</span> on
           </h2>
           <p className='text-xl md:text-2xl mb-12 md:mb-8'>
             Currently, my primary focus is on <span className='text-green-500 font-bold'>front-end development</span>, specializing in React and Vite. I thrive to create dynamic, responsive, and user-centric interfaces that provide seamless experiences across devices. My approach emphasizes building
@@ -48,7 +48,7 @@ function About() {
             <span className='text-green-500 font-bold'> maintainability</span>.</p>
           <br />
           <p className='text-xl md:text-2xl mb-4'>
-            Additionally, I'm expanding my expertise into full-stack development, with a focus on Node.js and Next.js, as well as database management with MySQL and PHP.
+            Additionally, I&apos;m expanding my expertise into full-stack development, with a focus on Node.js and Next.js, as well as database management with MySQL and PHP.
           </p>
           <Suspense fallback={<div>Loading...</div>}>
             <Icons />
