@@ -24,16 +24,18 @@ function Work() {
           </div>
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
-            <h2 className='text-4xl mb-4'>Days of <span className='text-green-500 font-bold'>Code</span></h2>
-            <Suspense fallback={<div>Loading...</div>}>
-              <Github />
-            </Suspense>
+            <div className='w-full mx-auto'>
+              <h2 className='text-4xl mb-4'>Days of <span className='text-green-500 font-bold'>Code</span></h2>
+              <Suspense fallback={<div>Loading...</div>}>
+                <Github />
+              </Suspense>
+            </div>
           </div>
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
             <h2 className='text-4xl mb-4'>Github <span className='text-green-500 font-bold'>Repositories</span></h2>
             <Suspense fallback={<div>Loading...</div>}>
-              <Repos />
+              <Repos/>
             </Suspense>
           </div>
 

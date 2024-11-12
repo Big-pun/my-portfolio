@@ -53,7 +53,7 @@ function Home() {
                         <li><span className='font-bold text-green-500'>Vite:</span> Vite is used as the build tool, offering fast development and optimized production builds.</li>
                         <li><span className='font-bold text-green-500'>React Icons:</span> Icons are provided by the React Icons library.</li>
                         <li><span className='font-bold text-green-500'>React Router:</span> React Router is used for navigation.</li>
-                        <li><span className='font-bold text-green-500'>React Helmet:</span> React Helmet is used for managing the document head.</li>
+                        <li><span className='font-bold text-green-500'>Charts:</span> Charts are created using the Chart.js library.</li>
                     </ul>
 
                     <p className='text-lg md:text-xl'>

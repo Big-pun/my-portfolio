@@ -34,9 +34,10 @@ function Repos() {
 
         setLanguages(languageData);
         setLoading(false);
-      } catch {
+      } catch (error) {
         setError('Erreur de récupération des langages');
         setLoading(false);
+
       }
     };
 
@@ -58,7 +59,7 @@ function Repos() {
     labels: Object.keys(languages),
     datasets: [
       {
-        label: 'Langages de programmation',
+        label: 'Langages',
         data: Object.values(languages),
         backgroundColor: Object.keys(languages).map((_, index) => `hsl(${(index * 360) / Object.keys(languages).length}, 70%, 60%)`), // Génère une couleur différente pour chaque secteur
         borderColor: Object.keys(languages).map((_, index) => `hsl(${(index * 360) / Object.keys(languages).length}, 70%, 50%)`),
@@ -83,8 +84,10 @@ function Repos() {
 
   return (
     <div>
-      <h2>Langages Utilisés dans Mes Projets GitHub</h2>
-      <Pie data={data} options={options} />
+      <h2>Languages I write code</h2>
+      <div className="max-w-screen-sm">
+        <Pie data={data} options={options} />
+      </div>
     </div>
   );
 }
