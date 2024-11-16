@@ -5,7 +5,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 function Socials() {
     return (
         <>
-            <div className='flex items-center justify-center space-x-4 bg-white rounded-lg shadow-lg'>
+            <div className='flex items-center justify-around space-x-4 bg-white rounded-lg shadow-lg'>
                 <a href='https://www.linkedin.com/in/adrien-thomas-a06b61307' target='_blank' rel='noreferrer' className='text-5xl text-blue-500 hover:text-blue-300 '>
                     <IoLogoLinkedin />
                 </a>

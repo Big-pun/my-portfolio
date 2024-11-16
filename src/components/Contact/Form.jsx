@@ -28,8 +28,6 @@ function Form() {
             );
     }
 
-
-
     const emailRegexPattern = {
         value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
         message: 'Invalid email address'
@@ -38,8 +36,9 @@ function Form() {
 
 
     return (
+        
                 <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-sm  rounded-lg shadow-lg' noValidate>
-                    <div className='grid grid-cols-2 gap-4'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div className='mb-4 mx-auto'>
                             <label htmlFor='name' className='block text-lg font-bold text-green-500'>Name</label>
                             <input type='text' id='name' name='name' placeholder='Enter your name'
