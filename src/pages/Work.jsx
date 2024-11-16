@@ -29,7 +29,7 @@ function Work() {
 
           <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
               <h2 className='text-4xl mb-4'>Days of <span className='text-green-500 font-bold'>Code</span></h2>
-              <div className='flex justify-center'>
+              <div className='flex justify-center w-full'>
               <Suspense fallback={<div>Loading...</div>}>
                 <Github />
               </Suspense>

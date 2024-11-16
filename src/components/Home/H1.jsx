@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion';
 
 function H1() {
@@ -10,7 +9,7 @@ function H1() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
             >
-                Hello,<br /> I'm <span className='font-bold text-green-500'>Adrien Thomas</span>
+                Hello,<br /> I&apos;m <span className='font-bold text-green-500'>Adrien Thomas</span>
             </motion.h1>
         </>
     )

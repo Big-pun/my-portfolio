@@ -48,12 +48,12 @@ function Projects() {
             <Slider {...settings}>
                 {projects.map((project, index) => (
                     <Background key={index}>
-                        <div className="flex flex-row items-center gap-4 p-12 min-h-96">
+                        <div className="flex flex-col md:flex-row items-center gap-4 p-12 min-h-96">
                             <div>
                                 <img src={project.imageUrl} alt={project.title} className='h-40' />
                             </div>
                             <div className='flex-col space-y-6'>
-                                <h2 className='text-2xl font-bold'>{project.title}</h2>
+                                <h2 className='text-2xl font-bold text-green-500'>{project.title}</h2>
                                 <p className='max-w-prose text-lg'>{project.description}</p>
 
                                 <a href={project.link} target="_blank" rel="noopener noreferrer">See project</a>

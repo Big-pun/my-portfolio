@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { BsPersonArmsUp } from "react-icons/bs";
 import { FaSuitcase, FaHome, FaBars, FaTimes } from "react-icons/fa";
@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav id="navbar" className="bg-transparent backdrop-blur-md md:mb-24" aria-label="Main Navigation">
+      <nav id="navbar" className="bg-transparent backdrop-blur-md lg:mb-16" aria-label="Main Navigation">
         <div className="container mx-auto flex justify-end md:justify-between items-center p-4">
           <div className="hidden md:flex md:items-center md:justify-between md:w-full md:ml-4">
             <NavLink to="/" className={getNavLinkClass} aria-label="Home" aria-current={({ isActive }) => isActive ? 'page' : undefined}><FaHome /> Home</NavLink>

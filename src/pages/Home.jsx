@@ -8,7 +8,7 @@ import { RiGitRepositoryCommitsLine } from "react-icons/ri";
 function Home() {
 
     const scrollToTextSection = () => {
-        document.getElementById('section2').scrollIntoView({ behavior: 'smooth' })
+        document.getElementById('portfolioStack').scrollIntoView({ behavior: 'smooth' })
     };
 
     return (
@@ -39,7 +39,7 @@ function Home() {
                 </div>
             </section>
 
-            <section id='section2' className='grid grid-cols-12 md:min-h-screen pt-8 lg:-my-16'>
+            <section id='portfolioStack' className='grid grid-cols-12 md:min-h-screen pt-8 lg:-my-16'>
                 <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3'>
                     <h2 className='text-5xl mb-8'>
                         How This <span className='text-green-500 font-bold'>Portfolio</span> Was Built
