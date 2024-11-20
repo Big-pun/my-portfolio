@@ -12,7 +12,7 @@ function Home() {
     };
 
     return (
-        <div className='container mx-auto p-4 z-10'>
+        <div className='container mx-auto p-4'>
             <section className='grid grid-cols-12 lg:min-h-screen'>
                 <div className='col-span-12 md:col-span-7 md:col-start-2'>
                     <H1 />
