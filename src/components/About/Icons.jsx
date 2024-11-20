@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function Icons() {
     return (
-        <div className='flex flex-row flex-wrap justify-evenly gap-4 md:justify-around'>
+        <div className='flex flex-row flex-wrap justify-evenly gap-4 md:justify-around z-10'>
             <IconContext.Provider value={{ color: 'orange', size: 50 }}>
                 <motion.div
                     className="border-2 border-gray-300 p-2 rounded-lg"

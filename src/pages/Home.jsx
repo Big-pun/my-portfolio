@@ -12,7 +12,7 @@ function Home() {
     };
 
     return (
-        <div className='container mx-auto p-4'>
+        <div className='container mx-auto p-4 z-10'>
             <section className='grid grid-cols-12 lg:min-h-screen'>
                 <div className='col-span-12 md:col-span-7 md:col-start-2'>
                     <H1 />
@@ -39,8 +39,8 @@ function Home() {
                 </div>
             </section>
 
-            <section id='portfolioStack' className='grid grid-cols-12 md:min-h-screen pt-8 lg:-my-16'>
-                <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3'>
+            <section id='portfolioStack' className=' grid grid-cols-12 pt-8 lg:-my-16 h-fit'>
+                <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3 '>
                     <h2 className='text-5xl mb-8'>
                         How This <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>Portfolio</span> Was Built
                     </h2>
@@ -59,7 +59,7 @@ function Home() {
                     <p className='text-lg md:text-xl'>
                         Feel free to explore the code and reach out if you have any questions or suggestions!
                     </p>
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center mb-36">
                         <a className='text-xl md:text-2xl mx-auto text-center bg-green-500 px-6 my-4 border-2 border-gray-300 rounded-lg text-black animate-pulse' href='https://github.com/Big-pun/my-portfolio' target='_blank'>
                             <RiGitRepositoryCommitsLine />
                         </a>

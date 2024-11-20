@@ -11,7 +11,7 @@ const scrollToTextSection = () => {
 
 function About() {
   return (
-    <div className='container mx-auto p-4 '>
+    <div className='container mx-auto p-4'>
       <section id='section1' className='grid grid-cols-12 md:min-h-screen'>
         <div className='col-span-12 md:col-span-6 md:col-start-2'>
           <Suspense fallback={<div>Loading...</div>}>
