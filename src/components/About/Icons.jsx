@@ -5,6 +5,7 @@ import { IconContext } from 'react-icons';
 import { SiNextdotjs } from "react-icons/si";
 import { motion } from 'framer-motion';
 
+
 function Icons() {
     return (
         <div className='flex flex-row flex-wrap justify-evenly gap-4 md:justify-around z-10'>
