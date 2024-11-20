@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 
 function H2() {
@@ -10,9 +9,9 @@ function H2() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2, delay: 10 }}
             >
-                Quick <span className='text-green-500 font-bold'>Introduction</span>
+                Quick <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>Introduction</span>
             <p className='text-xl md:text-2xl mt-8'>
-                I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I'll soon be looking for a intership opportunity ... but that's not our subject here
+                I am a web developer who loves to create websites and web applications. Currently following a front-end web development program, I&apos;ll soon be looking for a intership opportunity ... but that&apos;s not our subject here
             </p>
             </motion.h2>
         </>

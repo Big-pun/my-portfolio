@@ -39,32 +39,32 @@ function Form() {
         
                 <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-sm  rounded-lg shadow-lg' noValidate>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                        <div className='mb-4 mx-auto'>
-                            <label htmlFor='name' className='block text-lg font-bold text-green-500'>Name</label>
+                        <div className='mb-4 mx-auto flex flex-col w-2/3 md:w-full'>
+                            <label htmlFor='name' className='block text-lg'>Name</label>
                             <input type='text' id='name' name='name' placeholder='Enter your name'
                                 {...register('name', {
                                     required: 'Please enter a name',
                                     maxLength: { value: 20, message: 'Name is too long' },
                                     minLength: { value: 2, message: 'Name is too short' },
 
-                                })} className=' text-black mt-1 block shadow-sm text-lg border-gray-300 rounded-md' />
+                                })} className=' text-black mt-1 shadow-sm text-lg border-gray-300 rounded-md ' />
                             {errors.name && <span className='text-red-500'>{errors.name.message}</span>}
                         </div>
 
-                        <div className='mb-4 mx-auto'>
-                            <label htmlFor='email' className='block text-lg font-bold text-green-500'>Email</label>
+                        <div className='mb-4 mx-auto flex flex-col w-2/3 md:w-full'>
+                            <label htmlFor='email' className='block text-lg'>Email</label>
                             <input type='email' id='email' name='email' placeholder='Enter your email'
                                 {...register('email', {
                                     required: 'Please enter an email',
                                     pattern: emailRegexPattern,
                                 })}
-                                className='mt-1 text-black  block  shadow-sm text-lg border-gray-300 rounded-md' />
+                                className='mt-1 text-black shadow-sm text-lg border-gray-300 rounded-md' />
                             {errors.email && <span className='text-red-500'>{errors.email.message}</span>}
                         </div>
                     </div>
 
-                    <div className='mb-4'>
-                        <label htmlFor='message' className='block text-lg font-bold text-green-500'>Message</label>
+                    <div className='mb-4 mx-auto flex flex-col'>
+                        <label htmlFor='message' className='block text-lg'>Message</label>
                         <textarea id='message' name='message' rows={4} placeholder='Enter your message'
                             {...register('message', {
                                 required: 'Please enter a message',

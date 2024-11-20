@@ -16,7 +16,7 @@ function Contact() {
         </div>
 
         <div className='col-span-12 md:col-span-10 md:col-start-2 p-4'>
-          <h2 className='text-5xl mb-4'>Send Me a <span className='text-green-500 font-bold'>Message</span></h2>
+          <h2 className='text-5xl mb-12'>Send Me a <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>Message</span></h2>
           <Form />
         </div>
 

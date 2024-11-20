@@ -9,10 +9,10 @@ function H1() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
             >
-                Hello,<br /> I&apos;m <span className='font-bold text-green-500'>Adrien Thomas</span>
+                Hello,<br /> I&apos;m <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Adrien Thomas</span>
             </motion.h1>
         </>
     )
 }
 
-export default H1
+export default H1;

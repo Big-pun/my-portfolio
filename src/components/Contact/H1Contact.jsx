@@ -8,7 +8,7 @@ function H1Contact() {
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
-            >How To <span className='font-bold text-green-500'>Reach</span> me</motion.h1>
+            >How To <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Reach</span> me</motion.h1>
             <motion.p
                 className='text-2xl md:text-3xl max-w-prose'
                 initial={{ opacity: 0, y: 50 }}

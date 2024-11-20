@@ -42,7 +42,7 @@ function Home() {
             <section id='portfolioStack' className='grid grid-cols-12 md:min-h-screen pt-8 lg:-my-16'>
                 <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3'>
                     <h2 className='text-5xl mb-8'>
-                        How This <span className='text-green-500 font-bold'>Portfolio</span> Was Built
+                        How This <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>Portfolio</span> Was Built
                     </h2>
                     <p className='text-xl md:text-2xl mb-8'>
                         This portfolio was built using modern web development technologies to ensure a responsive and dynamic user experience. Here are some key aspects of its construction:

@@ -44,7 +44,7 @@ function Projects() {
 
     return (
         <div className="">
-            <h2 className='text-4xl text-green-500 font-bold mb-4'>Websites</h2>
+            <h2 className='text-4xl bg-gradient-green bg-clip-text text-transparent font-bold mb-4'>Websites</h2>
             <Slider {...settings}>
                 {projects.map((project, index) => (
                     <Background key={index}>

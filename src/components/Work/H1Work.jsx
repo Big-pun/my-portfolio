@@ -10,7 +10,7 @@ function H1Work() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
       >
-        Various <span className='font-bold text-green-500'>Projects</span><br /> I've <span className='font-bold text-green-500'>Work </span>on
+        Various <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Projects</span><br /> I've <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Work </span>on
       </motion.h1>
 
       <motion.p
