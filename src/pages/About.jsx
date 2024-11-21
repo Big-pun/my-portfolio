@@ -53,6 +53,8 @@ function About() {
           <Suspense fallback={<div>Loading...</div>}>
             <Icons />
           </Suspense>
+
+
         </div>
       </section>
     </div>

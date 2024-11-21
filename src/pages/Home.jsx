@@ -28,7 +28,7 @@ function Home() {
                     <img src={Dev} alt="Dev" />
                 </div>
 
-                <div className='col-span-12 text-center hidden lg:block -mt-36'>
+                <div className='col-span-12 text-center hidden lg:block lg:-mt-32'>
                     <button
                         className='text-green-500 text-5xl md:text-9xl animate-pulse items-center'
                         aria-label="Scroll to section 2"
