@@ -37,7 +37,7 @@ function Form() {
 
     return (
         
-                <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-sm  rounded-lg shadow-lg' noValidate>
+                <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-md rounded-lg shadow-lg bg-slate-700 bg-opacity-50 py-12 px-24' noValidate>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div className='mb-4 mx-auto flex flex-col w-2/3 md:w-full'>
                             <label htmlFor='name' className='block text-lg'>Name</label>
@@ -76,9 +76,9 @@ function Form() {
                         {errors.message && <span className='text-red-500'>{errors.message.message}</span>}
                     </div>
 
-                    <div className='mb-4 mx-auto text-center'>
-                        <button type='submit' className='"rounded-lg relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green-600 before:duration-500 before:ease-out hover:shadow-green-600 hover:before:h-56 hover:before:w-56"'>
-                            <span className="relative z-10">See project</span>
+                    <div className='mb-4'>
+                        <button type='submit' className="rounded-lg relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green-600 before:duration-500 before:ease-out hover:shadow-green-600 hover:before:h-56 hover:before:w-56">
+                            <span className="relative z-10">Envoyer</span>
                         </button>
                     </div>
                 </form>
