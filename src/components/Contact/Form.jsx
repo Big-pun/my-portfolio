@@ -37,9 +37,9 @@ function Form() {
 
     return (
         
-                <form onSubmit={handleSubmit(onSubmit)} className='mx-auto max-w-screen-md rounded-lg shadow-lg bg-slate-700 bg-opacity-50 py-12 px-24' noValidate>
-                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
-                        <div className='mb-4 mx-auto flex flex-col w-2/3 md:w-full'>
+                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center mx-auto max-w-screen-md rounded-lg shadow-lg bg-slate-700 bg-opacity-50 p-12 space-y-8' noValidate>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full'>
+                        <div className='mb-4 flex flex-col w-2/3 md:w-full'>
                             <label htmlFor='name' className='block text-lg'>Name</label>
                             <input type='text' id='name' name='name' placeholder='Enter your name'
                                 {...register('name', {
@@ -63,7 +63,7 @@ function Form() {
                         </div>
                     </div>
 
-                    <div className='mb-4 mx-auto flex flex-col'>
+                    <div className='mb-8 flex flex-col w-full'>
                         <label htmlFor='message' className='block text-lg'>Message</label>
                         <textarea id='message' name='message' rows={4} placeholder='Enter your message'
                             {...register('message', {
@@ -76,7 +76,7 @@ function Form() {
                         {errors.message && <span className='text-red-500'>{errors.message.message}</span>}
                     </div>
 
-                    <div className='mb-4'>
+                    <div className=''>
                         <button type='submit' className="rounded-lg relative flex h-[50px] w-40 items-center justify-center overflow-hidden bg-gray-800 text-white shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-green-600 before:duration-500 before:ease-out hover:shadow-green-600 hover:before:h-56 hover:before:w-56">
                             <span className="relative z-10">Envoyer</span>
                         </button>
