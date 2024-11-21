@@ -9,8 +9,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const getNavLinkClass = ({ isActive }) => {
-    return isActive ? "text-xl text-green-500 px-3 py-2 underline flex items-center" : "text-xl  text-white px-3 py-2 flex items-center hover:text-green-500";
+    return isActive 
+      ? "text-xl text-green-500 px-3 py-2 underline flex items-center relative transition-all duration-500 ease-out transform scale-105"
+      : "text-xl text-white px-3 py-2 flex items-center relative hover:text-green-500 transition-all duration-500 ease-out hover:scale-110";
   };
+  
+  
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
