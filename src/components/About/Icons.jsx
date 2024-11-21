@@ -6,6 +6,7 @@ import { SiNextdotjs } from "react-icons/si";
 import { motion } from 'framer-motion';
 
 
+
 function Icons() {
     return (
         <div className='flex flex-row flex-wrap justify-evenly gap-4 md:justify-around z-10'>
@@ -14,6 +15,7 @@ function Icons() {
                     className="border-2 border-gray-300 p-2 rounded-lg"
                     whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
                     transition={{ type: 'spring', stiffness: 300 }}
+                   
                 >
                     <FaHtml5 />
                 </motion.div>
@@ -23,6 +25,7 @@ function Icons() {
                     className="border-2 border-gray-300 p-2 rounded-lg"
                     whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
                     transition={{ type: 'spring', stiffness: 300 }}
+
                 >
                     <FaCss3Alt />
                 </motion.div>
@@ -32,6 +35,7 @@ function Icons() {
                     className="border-2 border-gray-300 p-2 rounded-lg"
                     whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
                     transition={{ type: 'spring', stiffness: 300 }}
+
                 >
                     <FaReact />
                 </motion.div>
@@ -41,6 +45,7 @@ function Icons() {
                     className="border-2 border-gray-300 p-2 rounded-lg"
                     whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
                     transition={{ type: 'spring', stiffness: 300 }}
+
                 >
                     <IoLogoJavascript />
                 </motion.div>
@@ -50,6 +55,7 @@ function Icons() {
                     className="border-2 border-gray-300 p-2 rounded-lg"
                     whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
                     transition={{ type: 'spring', stiffness: 300 }}
+
                 >
                     <RiTailwindCssFill />
                 </motion.div>
@@ -59,6 +65,7 @@ function Icons() {
                     className="border-2 border-gray-300 p-2 rounded-lg"
                     whileHover={{ scale: 1.2, rotate: 360, backgroundColor: '#d6dae1' }}
                     transition={{ type: 'spring', stiffness: 300 }}
+
                 >
                     <SiNextdotjs />
                 </motion.div>

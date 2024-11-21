@@ -48,12 +48,17 @@ function Home() {
                         This portfolio was built using modern web development technologies to ensure a responsive and dynamic user experience. Here are some key aspects of its construction:
                     </p>
                     <ul className='list-disc list-inside text-xl md:text-2xl mb-8'>
-                        <li><span className='font-bold text-green-500'>React:</span> The entire application is built using React.</li>
-                        <li><span className='font-bold text-green-500'>Tailwind CSS:</span> Tailwind CSS is used for styling, providing a utility-first approach that allows for rapid and responsive development.</li>
-                        <li><span className='font-bold text-green-500'>Vite:</span> Vite is used as the build tool, offering fast development and optimized production builds.</li>
-                        <li><span className='font-bold text-green-500'>React Icons:</span> Icons are provided by the React Icons library.</li>
-                        <li><span className='font-bold text-green-500'>React Router:</span> React Router is used for navigation.</li>
-                        <li><span className='font-bold text-green-500'>Charts:</span> Charts are created using the Chart.js library.</li>
+                        <li><span className='font-bold text-green-500'>React</span> The entire application is built using React.</li>
+                        <li><span className='font-bold text-green-500'>Vite</span> is used as the build tool, offering fast development and optimized production builds.</li>
+                        <li><span className='font-bold text-green-500'>React Router</span> is used for navigation.</li>
+                        <li><span className='font-bold text-green-500'>Tailwind CSS</span> is used for styling, providing a utility-first approach that allows for rapid and responsive development.</li>
+                        <li><span className='font-bold text-green-500'>tsParticles</span> is used to create the stary night background</li>
+                        <li><span className='font-bold text-green-500'>Framer motion</span> is used for animations.</li>
+                        <li><span className='font-bold text-green-500'>Typewritter</span> is used for the typewritter effect.</li>
+                        <li><span className='font-bold text-green-500'>React Icons</span> Icons are provided by the React Icons library.</li>
+                        <li><span className='font-bold text-green-500'>Charts.js</span> The Pie Charts is created using the Chart.js library.</li>
+                        <li><span className='font-bold text-green-500'>GitHub API</span> is used to fetch the languages used in my repositories.</li>
+                        <li><span className='font-bold text-green-500'>Email.js</span> is used to send emails from the contact form.</li>
                     </ul>
 
                     <p className='text-lg md:text-xl'>
