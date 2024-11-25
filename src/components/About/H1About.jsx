@@ -9,7 +9,7 @@ function H1About() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
             >
-                Let me <br/> <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Introduce</span> myself
+                Let me <br/> <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>introduce</span> myself
             </motion.h1>
             <motion.p
                 className='text-2xl md:text-3xl max-w-prose'

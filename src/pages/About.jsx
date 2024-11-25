@@ -1,6 +1,8 @@
 import { Suspense, lazy } from 'react';
 import Avatar from '../Images/Avatar.png';
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
+import Hangman from '../components/About/Hangman';
+
 
 const Icons = lazy(() => import('../components/About/Icons'));
 const H1About = lazy(() => import('../components/About/H1About'));
@@ -38,22 +40,23 @@ function About() {
       <section id='section2' className='grid grid-cols-12 md:min-h-screen pt-8 lg:-my-16'>
         <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3'>
           <h2 className='text-5xl mb-12 md:mb-8'>
-            What I&apos;m <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>Focusing</span> on
+            What I&apos;m <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>focusing</span> on
           </h2>
-          <p className='text-xl md:text-2xl mb-12 md:mb-8'>
-            Currently, my primary focus is on <span className='text-green-500 font-bold'>front-end development</span>, specializing in <span className='text-green-500 font-bold'>React and Vite</span>. I thrive to create dynamic, responsive, and user-centric interfaces that provide seamless experiences across devices. My approach emphasizes building
+          <p className='text-xl md:text-2xl mb-12 md:mb-8 max-w-prose'>
+            Currently, my primary focus is on <span className='text-green-500 font-bold'>front-end development</span>, specializing in <span className='text-green-500 font-bold'>React and Vite</span>.<br/> I thrive to create dynamic, responsive, and user-centric interfaces that provide seamless experiences across devices. My approach emphasizes building
             <span className='text-green-500 font-bold'> clean</span>, modular
             <span className='text-green-500 font-bold'> code</span> that ensures both high
             <span className='text-green-500 font-bold'> readability</span> and
             <span className='text-green-500 font-bold'> maintainability</span>.</p>
           <br />
-          <p className='text-xl md:text-2xl mb-4'>
+          <p className='text-xl md:text-2xl mb-8'>
             Additionally, I&apos;m expanding my expertise into full-stack development, with Node.js and Next.js.
           </p>
           <Suspense fallback={<div>Loading...</div>}>
             <Icons />
           </Suspense>
 
+          <Hangman />
 
         </div>
       </section>

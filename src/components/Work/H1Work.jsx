@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 function H1Work() {
@@ -10,7 +9,7 @@ function H1Work() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2 }}
       >
-        Various <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Projects</span><br /> I've <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>Work </span>on
+        Various <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>projects</span><br /> I&apos;ve <span className='font-bold bg-gradient-green bg-clip-text text-transparent'>work </span>on
       </motion.h1>
 
       <motion.p
@@ -19,7 +18,7 @@ function H1Work() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2, delay: 2 }}
       >
-        Here are some of the projects I've worked on. Feel free to check the code on my <a href='https://github.com/Big-pun' target='_blank' className='underline hover:text-green-500'>GitHub</a>.
+        Here are some of the projects I&apos;ve worked on. Feel free to check the code on my <a href='https://github.com/Big-pun' target='_blank' className='underline hover:text-green-500'>GitHub</a>.
       </motion.p>
     </>
   );
