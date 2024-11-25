@@ -37,7 +37,7 @@ function Form() {
 
     return (
         
-                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center mx-auto max-w-screen-md rounded-lg shadow-lg bg-slate-700 bg-opacity-50 p-12 space-y-8' noValidate>
+                <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center mx-auto max-w-screen-md rounded-lg shadow-lg bg-slate-600 bg-opacity-50 p-12 space-y-8' noValidate>
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full'>
                         <div className='mb-4 flex flex-col w-2/3 md:w-full'>
                             <label htmlFor='name' className='block text-lg'>Name</label>
