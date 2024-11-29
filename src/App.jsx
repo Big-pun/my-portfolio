@@ -1,7 +1,7 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/Main/Navbar";
+import Footer from "./components/Main/Footer";
 import { Outlet } from "react-router-dom";
-import StarsParticles from "./components/StarsParticles";
+import StarsParticles from "./components/Main/StarsParticles";
 
 import "./App.css";
 

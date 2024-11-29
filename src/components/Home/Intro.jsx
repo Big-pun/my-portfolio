@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Typewriter from 'typewriter-effect/dist/core';
 
-const Intro = () => {
+const TypeWritterIntro = () => {
   const [showIntro, setShowIntro] = useState(false);
 
   useEffect(() => {
@@ -35,4 +35,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default TypeWritterIntro;

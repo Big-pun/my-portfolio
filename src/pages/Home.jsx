@@ -1,9 +1,9 @@
-import Intro from '../components/Home/Intro';
-import Dev from '../Images/Dev.svg';
+import TypeWritterIntro from '../components/Home/Intro';
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import H1 from '../components/Home/H1';
 import H2 from '../components/Home/H2';
 import { RiGitRepositoryCommitsLine } from "react-icons/ri";
+import Logo from '../components/Home/Logo';
 
 function Home() {
 
@@ -18,14 +18,14 @@ function Home() {
                     <H1 />
                     <div className='relative'>
                         <div className='h-16 md:h-20'>
-                            <Intro />
+                            <TypeWritterIntro />
                         </div>
                         <H2 className='absolute top-0 left-0' />
                     </div>
                 </div>
 
                 <div className='col-span-6 col-start-4 md:col-span-3 md:col-start-9 mb-12 md:mb-0 md:mt-24'>
-                    <img src={Dev} alt="Dev" />
+                    <Logo/>
                 </div>
 
                 <div className='col-span-12 text-center hidden lg:block lg:-mt-32'>
