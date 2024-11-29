@@ -2,6 +2,8 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
+  "description": "My portfolio website",
+  "homepage": "https://big-pun.github.io/my-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
