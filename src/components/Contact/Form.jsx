@@ -1,13 +1,15 @@
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import { useState } from 'react';
+import Confirmation from './Confirmation';
 
 function Form() {
-
+    const [isSubmitted, setIsSubmitted] = useState(false);
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
 
-        const templateParams = {
+        const currentForm = {
             name: data.name,
             email: data.email,
             message: data.message,
@@ -18,12 +20,13 @@ function Form() {
             .send(
                 import.meta.env.VITE_EMAILJS_SERVICE_KEY,
                 import.meta.env.VITE_EMAILJS_TEMPLATE_KEY,
-                templateParams,
+                currentForm,
                 import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
             .then(
                 (response) => {
                     console.log('SUCCESS!', response.status, response.text);
+                    setIsSubmitted(true);
                 },
                 (err) => {
                     console.log('FAILED...', err);
@@ -39,7 +42,9 @@ function Form() {
 
 
     return (
-
+        isSubmitted ? (
+        <Confirmation />
+    ) : ( 
         <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col items-center mx-auto max-w-screen-md rounded-lg shadow-lg bg-slate-600 bg-opacity-50 p-12 space-y-8' noValidate>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-full'>
                 <div className='mb-4 flex flex-col w-2/3 md:w-full'>
@@ -85,6 +90,7 @@ function Form() {
                 </button>
             </div>
         </form>
+    )   
     )
 }
 
