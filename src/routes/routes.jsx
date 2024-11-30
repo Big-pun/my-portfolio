@@ -1,4 +1,4 @@
-import {  createHashRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -6,26 +6,26 @@ import Work from "../pages/Work";
 import Contact from "../pages/Contact";
 import ErrorPage from "../pages/ErrorPage";
 
-const myRoutes = createHashRouter([
+const myRoutes = createBrowserRouter([
     {
         path: "/my-portfolio/",
         element: <App />,
         errorElement: <div>404 Not Found</div>,
         children: [
             {
-                path: "",
+                path: "/my-portfolio/",
                 element: <Home />,
             },
             {
-                path: "about",
+                path: "/my-portfolio/about",
                 element: <About />,
             },
             {
-                path: "work",
+                path: "/my-portfolio/work",
                 element: <Work />,
             },
             {
-                path: "contact",
+                path: "/my-portfolio/contact",
                 element: <Contact />,
             },
         ],
