@@ -1,6 +1,6 @@
 import DBZKakarot from '../../Images/DBZKakarot.png';
 import TRS from '../../Images/TheRollingStoners.png';
-import Campings from '../../Images/campings.png';
+import Campings from '../../Images/Campings.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
