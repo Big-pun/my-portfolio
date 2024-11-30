@@ -17,15 +17,15 @@ const myRoutes = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "/my-portfolio/about",
+                path: "about",
                 element: <About />,
             },
             {
-                path: "/my-portfolio/work",
+                path: "work",
                 element: <Work />,
             },
             {
-                path: "/my-portfolio/contact",
+                path: "contact",
                 element: <Contact />,
             },
         ],
