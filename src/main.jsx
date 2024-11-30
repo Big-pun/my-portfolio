@@ -1,11 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { RouterProvider } from "react-router-dom";
-import myRoutes from './routes/routes'
+import { HashRouter } from "react-router-dom";
+import App from './App';
 import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={myRoutes}/>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </StrictMode>
 )
