@@ -13,19 +13,19 @@ const myRoutes = createBrowserRouter([
         errorElement: <div>404 Not Found</div>,
         children: [
             {
-                path: "",
+                path: "/my-portfolio/",
                 element: <Home />,
             },
             {
-                path: "about",
+                path: "/my-portfolio/about",
                 element: <About />,
             },
             {
-                path: "work",
+                path: "/my-portfolio/work",
                 element: <Work />,
             },
             {
-                path: "contact",
+                path: "/my-portfolio/contact",
                 element: <Contact />,
             },
         ],
