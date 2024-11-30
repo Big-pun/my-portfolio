@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "description": "My portfolio website",
   "homepage": "https://big-pun.github.io/my-portfolio/",
