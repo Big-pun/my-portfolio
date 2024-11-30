@@ -8,7 +8,7 @@ import ErrorPage from "../pages/ErrorPage";
 
 const myRoutes = createBrowserRouter([
     {
-        path: "/my-portfolio",
+        path: "/my-portfolio/",
         element: <App />,
         errorElement: <div>404 Not Found</div>,
         children: [
