@@ -6,34 +6,35 @@ import Work from "../pages/Work";
 import Contact from "../pages/Contact";
 import ErrorPage from "../pages/ErrorPage";
 
-const myRoutes = createBrowserRouter([
+const myRoutes = createBrowserRouter(
+  [
     {
-        path: "/",
-        element: <App />,
-        errorElement: <div>404 Not Found</div>,
-        children: [
-            {
-                path: "/",
-                element: <Home />,
-            },
-            {
-                path: "about",
-                element: <About />,
-            },
-            {
-                path: "work",
-                element: <Work />,
-            },
-            {
-                path: "contact",
-                element: <Contact />,
-            },
-        ],
+      path: "/",
+      element: <App />,
+      errorElement: <ErrorPage />, // Utilise ErrorPage pour les erreurs internes
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/work",
+          element: <Work />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+      ],
     },
-    {
-        path: "*",
-        element: <ErrorPage />,
-    }
-]);
+  ],
+  {
+    basename: "/my-portfolio", // Le nom de ton dépôt GitHub Pages
+  }
+);
 
 export default myRoutes;
