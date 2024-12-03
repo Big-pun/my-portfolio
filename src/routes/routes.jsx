@@ -33,7 +33,7 @@ const myRoutes = createBrowserRouter(
     },
   ],
   {
-    basename: "/my-portfolio", // Le nom de ton dépôt GitHub Pages
+    basename: "/my-portfolio/", // Le nom de ton dépôt GitHub Pages
   }
 );
 

@@ -8,7 +8,7 @@ const TypeWritterIntro = () => {
     
     const h1Timeout = setTimeout(() => {
       setShowIntro(true);
-    }, 3000); // motion h1 + 1 sec
+    }, 2000); // motion h1 + 1 sec
 
     return () => clearTimeout(h1Timeout);
   }, []);
@@ -20,7 +20,7 @@ const TypeWritterIntro = () => {
         strings: ["Welcome to my portfolio <br/> I'm a student front-end developer"],
         autoStart: true,
         loop: true,
-        delay: 100,
+        delay: 50,
         deleteSpeed: 50,
       });
     }
