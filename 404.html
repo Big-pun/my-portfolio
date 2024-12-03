@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Not Found</title>
+    <meta http-equiv="refresh" content="0; URL=/my-portfolio/">
+    <script type="text/javascript">
+      // Redirection pour les routes côté client
+      var path = window.location.pathname;
+      var newPath = path.replace('/my-portfolio', '');
+      window.location.replace('/my-portfolio' + newPath);
+    </script>
+  </head>
+  <body>
+    <h1>Page Not Found</h1>
+    <p>Redirecting...</p>
+  </body>
+</html>
