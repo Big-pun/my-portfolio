@@ -1,19 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Hangman() {
-  // Liste des mots possibles (tu peux personnaliser cette liste)
-  const [chosenWord, setChosenWord] = useState("");
+  const [chosenWord] = useState("clean-code");
   const [guesses, setGuesses] = useState([]);
   const [incorrectGuesses, setIncorrectGuesses] = useState([]);
-  const [remainingLives, setRemainingLives] = useState(6); // 6 vies pour le jeu
+  const [remainingLives, setRemainingLives] = useState(10);
+  const [wtfPositions, setWtfPositions] = useState([]);
 
-  // Fonction pour choisir un mot aléatoire au démarrage
-  useEffect(() => {
-    const words = ["react", "javascript", "developer", "frontend", "code"];
-    setChosenWord(words[Math.floor(Math.random() * words.length)]);
-  }, []);
-  // Fonction pour vérifier si l'utilisateur a trouvé le mot
   const checkGuess = (letter) => {
     if (guesses.includes(letter) || incorrectGuesses.includes(letter)) {
       return;
@@ -24,37 +18,46 @@ export default function Hangman() {
     } else {
       setIncorrectGuesses([...incorrectGuesses, letter]);
       setRemainingLives(remainingLives - 1);
+      addRandomWtfPosition();
     }
   };
 
-  // Fonction pour afficher le mot avec des underscores pour les lettres non devinées
-  const displayWord = () => {
-    return chosenWord.split("").map((letter) => 
-      guesses.includes(letter) ? letter : "_"
-    ).join(" ");
+  const addRandomWtfPosition = () => {
+    const randomX = Math.random() * 80 + 10; // Random percentage between 10% and 90%
+    const randomY = Math.random() * 80 + 10; // Random percentage between 10% and 90%
+    setWtfPositions([...wtfPositions, { x: randomX, y: randomY }]);
   };
 
-  // Vérification si l'utilisateur a gagné
-  const isWinner = displayWord().replace(/\s/g, "") === chosenWord;
+  const displayWord = () => {
+    return chosenWord
+      .split("")
+      .map((letter) =>
+        guesses.includes(letter) || letter === "-" ? letter : "_"
+      )
+      .join(" ");
+  };
 
-  // Vérification si le jeu est perdu
+  const isWinner = displayWord().replace(/\s/g, "") === chosenWord;
   const isGameOver = remainingLives === 0;
 
-  // Liste des lettres de l'alphabet
-  const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+  const keyboardLayout = [
+    "qwertyuiop".split(""),
+    "asdfghjkl".split(""),
+    "zxcvbnm".split(""),
+  ];
 
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h2>Jeu du Pendu</h2>
-      <h3>{displayWord()}</h3>
+    <div className="text-center mt-12 bg-slate-700 bg-opacity-50 rounded-lg p-4">
+      <h2 className="text-2xl font-bold mb-4 bg-gradient-green bg-clip-text text-transparent">Hangman</h2>
+      <h3 className="text-xl font-mono tracking-wider">{displayWord()}</h3>
 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        style={{ fontSize: "24px", color: "red" }}
+        className="text-red-500 text-xl font-semibold mt-4"
       >
-        <p>Vies restantes: {remainingLives}</p>
+        <p>Trials left : {remainingLives}</p>
       </motion.div>
 
       {isWinner && (
@@ -62,9 +65,9 @@ export default function Hangman() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          style={{ color: "green", fontWeight: "bold" }}
+          className="text-green-600 font-bold text-lg mt-4"
         >
-          🎉 Félicitations, vous avez gagné !
+          Congratulation !!! You Won !!!
         </motion.div>
       )}
 
@@ -73,54 +76,64 @@ export default function Hangman() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          style={{ color: "red", fontWeight: "bold" }}
+          className="text-red-600 font-bold text-lg mt-4"
         >
-          😢 Vous avez perdu ! Le mot était &quot;{chosenWord}&quot;.
+          You lost !!! The correct answer is &quot;{chosenWord}&quot;.
         </motion.div>
       )}
 
-      <div style={{ marginTop: "20px" }}>
-        <h4>Proposez une lettre :</h4>
-        <div>
-          {alphabet.map((letter) => (
-            <button
-              key={letter}
-              onClick={() => checkGuess(letter)}
-              disabled={guesses.includes(letter) || incorrectGuesses.includes(letter)}
+<div className="mt-8">
+        <h3 className="text-xl font-semibold">Hint</h3>
+        <div className="relative mx-auto w-48 h-64 border-4 border-gray-700 bg-yellow-50 rounded-md mt-4">
+          <h4 className="text-lg font-semibold text-center mt-2 border border-black text-black ">Code review</h4>
+          {/* Dessin de la poignée */}
+          <div className="absolute bottom-24 right-6 w-6 h-6 bg-gray-600 rounded-full border-2 border-gray-800"></div>
+
+          {/* WTF aléatoires */}
+          {wtfPositions.map((pos, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              className="absolute font-bold text-red-600 text-xl"
               style={{
-                fontSize: "18px",
-                margin: "5px",
-                padding: "10px",
-                borderRadius: "5px",
-                backgroundColor: guesses.includes(letter) || incorrectGuesses.includes(letter) ? "#ccc" : "#4CAF50",
-                color: "white",
+                top: `${pos.y}%`,
+                left: `${pos.x}%`,
+                transform: "translate(-50%, -50%)",
               }}
             >
-              {letter}
-            </button>
+              WTF
+            </motion.div>
           ))}
         </div>
       </div>
 
-      <div style={{ marginTop: "30px" }}>
-        {remainingLives < 6 && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1 }}
-          >
-            <h3>État du Pendu :</h3>
-            <p>
-              {remainingLives === 5 && "Tête"}
-              {remainingLives <= 4 && ", Bras gauche"}
-              {remainingLives <= 3 && ", Bras droit"}
-              {remainingLives <= 2 && ", Jambes gauche"}
-              {remainingLives <= 1 && ", Jambes droite"}
-              {remainingLives === 0 && ", Pendu !"}
-            </p>
-          </motion.div>
-        )}
+      <div className="mt-8">
+        <h4 className="text-lg font-semibold mb-4">Proposez une lettre :</h4>
+        {keyboardLayout.map((row, rowIndex) => (
+          <div key={rowIndex} className="mb-2">
+            {row.map((letter) => (
+              <button
+                key={letter}
+                onClick={() => checkGuess(letter)}
+                disabled={
+                  guesses.includes(letter) || incorrectGuesses.includes(letter)
+                }
+                className={`text-white font-bold py-2 px-3 rounded-md m-1 transition-colors ${
+                  guesses.includes(letter) || incorrectGuesses.includes(letter)
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-green-500 hover:bg-green-600"
+                }`}
+              >
+                {letter}
+              </button>
+            ))}
+          </div>
+        ))}
       </div>
+
+      
     </div>
-    );
+  );
 }

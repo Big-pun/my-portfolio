@@ -6,7 +6,7 @@ function Footer() {
         <>
             <footer className="">
                 {/* Footer Content */}
-                <div className=" container mx-auto flex flex-col space-y-2 p-2 md:flex-row justify-around items-center text-gray-300 z-20">
+                <div className=" container mx-auto flex flex-col space-y-2 p-2 md:flex-row justify-around items-center text-gray-300 z-20 mt-12">
                     <div className="p-1 rounded-lg">Designed and Developed by Adrien Thomas</div>
                     <div className="p-1 rounded-lg">Copyright © 2024 AT</div>
                     <div className="flex flex-row space-x-4 text-3xl  p-1 rounded-lg">
