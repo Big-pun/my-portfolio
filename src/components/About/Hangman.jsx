@@ -118,7 +118,7 @@ export default function Hangman() {
                 disabled={
                   guesses.includes(letter) || incorrectGuesses.includes(letter)
                 }
-                className={`text-white font-bold py-2 px-3 rounded-md m-1 transition-colors ${guesses.includes(letter) || incorrectGuesses.includes(letter)
+                className={`text-white font-bold py-2 px-2 rounded-md m-1 transition-colors ${guesses.includes(letter) || incorrectGuesses.includes(letter)
                     ? "bg-gray-400 cursor-not-allowed"
                     : "bg-green-500 hover:bg-green-600"
                   }`}
