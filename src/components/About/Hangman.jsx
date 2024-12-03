@@ -108,7 +108,7 @@ export default function Hangman() {
       </div>
 
       <div className="mt-8">
-        <h4 className="text-lg font-semibold mb-4">Proposez une lettre :</h4>
+        <h4 className="text-lg font-semibold mb-4">Try a letter :</h4>
         {keyboardLayout.map((row, rowIndex) => (
           <div key={rowIndex} className="mb-2">
             {row.map((letter) => (
