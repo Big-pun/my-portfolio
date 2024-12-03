@@ -47,7 +47,7 @@ export default function Hangman() {
   ];
 
   return (
-    <div className="text-center mt-12 bg-slate-700 bg-opacity-50 rounded-lg p-4">
+    <div className="text-center mt-12 bg-slate-700 bg-opacity-50 rounded-lg py-4">
       <h2 className="text-2xl font-bold mb-4 bg-gradient-green bg-clip-text text-transparent">Hangman</h2>
       <h3 className="text-xl font-mono tracking-wider">{displayWord()}</h3>
 
@@ -82,14 +82,12 @@ export default function Hangman() {
         </motion.div>
       )}
 
-<div className="mt-8">
+      <div className="mt-8">
         <h3 className="text-xl font-semibold">Hint:</h3>
         <div className="relative mx-auto w-48 h-64 border-4 border-gray-700 bg-yellow-50 rounded-md mt-4">
           <h4 className="text-lg font-semibold text-center mt-2 border border-black text-black ">Code review</h4>
-          {/* Dessin de la poignée */}
           <div className="absolute bottom-24 right-6 w-6 h-6 bg-gray-600 rounded-full border-2 border-gray-800"></div>
 
-          {/* WTF aléatoires */}
           {wtfPositions.map((pos, index) => (
             <motion.div
               key={index}
@@ -120,11 +118,10 @@ export default function Hangman() {
                 disabled={
                   guesses.includes(letter) || incorrectGuesses.includes(letter)
                 }
-                className={`text-white font-bold py-2 px-3 rounded-md m-1 transition-colors ${
-                  guesses.includes(letter) || incorrectGuesses.includes(letter)
+                className={`text-white font-bold py-2 px-3 rounded-md m-1 transition-colors ${guesses.includes(letter) || incorrectGuesses.includes(letter)
                     ? "bg-gray-400 cursor-not-allowed"
                     : "bg-green-500 hover:bg-green-600"
-                }`}
+                  }`}
               >
                 {letter}
               </button>
@@ -133,7 +130,7 @@ export default function Hangman() {
         ))}
       </div>
 
-      
+
     </div>
   );
 }
