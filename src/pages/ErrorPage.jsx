@@ -1,13 +1,22 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function ErrorPage() {
   const navigate = useNavigate();
-  // Par exemple, rediriger l'utilisateur après une erreur
-  setTimeout(() => navigate("/"), 3000);
+
+  useEffect(() => {
+    // Rediriger après 3 secondes
+    const timer = setTimeout(() => {
+      navigate("/"); // Redirige vers la page d'accueil
+    }, 3000);
+
+    // Nettoyer le timer lorsque le composant est démonté
+    return () => clearTimeout(timer);
+  }, [navigate]);
 
   return (
     <div>
-      <h2>Page not found. Redirecting...</h2>
+      <h2>Page non trouvée. Vous allez être redirigé...</h2>
     </div>
   );
 }
