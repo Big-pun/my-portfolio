@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <title>Page non trouvée</title>
+    <script type="text/javascript">
+      // Lorsque l'on arrive sur une page 404, on redirige vers index.html
+      // en conservant l'URL actuelle après "/my-portfolio"
+      window.location.replace("/my-portfolio" + window.location.pathname + window.location.search);
+    </script>
   </head>
   <body>
-    <p>La page que vous recherchez n'existe pas. Vous allez être redirigé...</p>
+    <p>La page que vous recherchez n'existe pas. Vous allez être redirigé.</p>
   </body>
 </html>
