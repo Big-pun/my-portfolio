@@ -58,7 +58,7 @@ function About() {
 
         </div>
 
-        <div className='col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3 mt-12'>
+        <div className='col-span-12 md:col-span-10 md:col-start-2 mt-12 '>
         <h2 className='text-5xl mb-12 md:mb-8'>
             Let&apos;s play a <span className='bg-gradient-green bg-clip-text text-transparent font-bold'>game</span></h2>
           <Hangman />

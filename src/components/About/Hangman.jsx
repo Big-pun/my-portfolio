@@ -83,7 +83,7 @@ export default function Hangman() {
       )}
 
 <div className="mt-8">
-        <h3 className="text-xl font-semibold">Hint</h3>
+        <h3 className="text-xl font-semibold">Hint:</h3>
         <div className="relative mx-auto w-48 h-64 border-4 border-gray-700 bg-yellow-50 rounded-md mt-4">
           <h4 className="text-lg font-semibold text-center mt-2 border border-black text-black ">Code review</h4>
           {/* Dessin de la poignée */}

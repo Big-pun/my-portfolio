@@ -7,7 +7,7 @@ function Logo() {
             className='text-5xl md:text-6xl mb-12 md:mb-8'
             initial={{ opacity: 0, y: 0 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2 }}>
+            transition={{ delay: 2 , duration: 3 }}>
             <img src={Dev} alt="Dev" />
         </motion.div>
     )
